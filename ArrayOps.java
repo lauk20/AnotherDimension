@@ -53,11 +53,11 @@ public class ArrayOps{
   }
 
   public static int[] sumCols(int[][] matrix){
-    int[] sumArray = new int[matrix.length];
+    int[] sumArray = new int[matrix[0].length];
 
     for (int i = 0; i < matrix[0].length; i++){
       int col = 0;
-      for (int j = 0; j < matrix.length; i++){
+      for (int j = 0; j < matrix.length; j++){
         col = col + matrix[j][i];
       }
       sumArray[i] = col;
